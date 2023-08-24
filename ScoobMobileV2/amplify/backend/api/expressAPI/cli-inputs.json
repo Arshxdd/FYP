@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/temp": {
+      "name": "/temp",
+      "lambdaFunction": "expressFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "api": {
+    "expressAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "expressFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {},
+  "function": {
+    "expressFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_expressFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "expressFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_expressFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "expressFunction"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s3scoobmobilev2storagede8b844b": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-scoobmobilev2-dev-174945-authRole",
+      "UnauthRoleArn": "arn:aws:iam::769838765134:role/amplify-scoobmobilev2-dev-174945-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::769838765134:role/amplify-scoobmobilev2-dev-174945-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-scoobmobilev2-dev-174945-deployment",
+      "UnauthRoleName": "amplify-scoobmobilev2-dev-174945-unauthRole",
+      "StackName": "amplify-scoobmobilev2-dev-174945",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:769838765134:stack/amplify-scoobmobilev2-dev-174945/2578a160-10e2-11ee-9f73-0a2646c16102",
+      "AmplifyAppId": "d97e5mhrp189f"
+    },
+    "categories": {
+      "function": {
+        "expressFunction": {
+          "deploymentBucketName": "amplify-scoobmobilev2-dev-174945-deployment",
+          "s3Key": "amplify-builds/expressFunction-77776e304b6f30415836-build.zip"
+        }
+      },
+      "storage": {
+        "s3scoobmobilev2storagede8b844b": {}
+      },
+      "api": {
+        "expressAPI": {}
+      }
+    }
+  }
+}

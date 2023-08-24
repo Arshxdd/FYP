@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Scoob Systems - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">
+      <img src="img/Scoob Bus Orange.svg" height="30px" alt="Toggle Navigation">
+    </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>  
+
+    <!--Navigation Shortcuts-->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+      <li class="nav-item" >
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+			<li class="nav-item" >
+				<a class="nav-link" href="services.html">Services</a>
+			</li>
+      <!--li class="nav-item" >
+				<a class="nav-link" href="parents.html">Parents</a>
+			</li-->
+      <li class="nav-item" >
+				<a class="nav-link" href="updates.html">Updates</a>
+			</li>
+      <li class="nav-item" >
+				<a class="nav-link" href="contact.html">Contact Us</a>
+			</li>
+      <li class="nav-item" >
+				<a class="nav-link" href="/Scoob-Site/ScoobAdminPortal/onboarding/onboard-home.php">Signup</a>
+			</li>
+      <li class="nav-item" >
+				<a class="nav-link" href="/Scoob-Site/ScoobAdminPortal/login.php">Login</a>
+			</li>
+
+			</ul>
+    
+		</div>
+	</nav>
+
+  <!--Main Body-->
+  <div class="logo">
+    <br><br><br>
+    <img src="img/scoobcirclesquare.png" alt="Scoob Systems Logo" class="center" style="width: 15%; height: auto;">
+    <br>
+    <!--<p>Coming Soon</p>-->
+    <p id="demo"></p>
+
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 23, 2023 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      //+ minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+
+  
+  
+    </script>  
+  </div>
+
+
+<!--Body Main Info-->
+<div class="maininfo">
+  <br><br><br>
+ 
+  <h1>The Trusted School Dismissal Platform</h1>
+  <br><br><br>
+  <p style="max-width: 500px; height: auto; font-size: 25px;">Enhance your daily and emergency operations by utilizing a user-friendly platform designed to streamline your pickup management process, ensuring efficient planning and organization for the entire duration of the school day.</p>
+  <br><br><br>
+  <img src="img/dismiss.jpg" alt="home-teachers-students" style="width: 30%; height: auto;">
+  <br><br><br>
+
+  <img src="img/phone.png" alt="home-teachers-students" style="width: 5%; height: auto;">
+  <br><br><br>
+</div>
+
+
+<div class="tick">
+  <div class="tick-item">
+    <img src="img/ticksss.png" alt="tick" style="width: 5%; height: auto;">
+    <h1>Safe</h1>
+  </div>
+  <div class="tick-item">
+    <img src="img/ticksss.png" alt="tick" style="width: 5%; height: auto;">
+    <h1>Secure</h1>
+  </div>
+  <div class="tick-item">
+    <img src="img/ticksss.png" alt="tick" style="width: 5%; height: auto;">
+    <h1>Streamlined</h1>
+  </div>
+</div>
+<br><br><br>
+<br><br><br>
+<div class="links">
+  <ul class="info">
+    <li class="desc">
+      <h1>What is Scoob?</h1>
+      <h1>What services?</h1>
+    </li>
+    <br>
+    <li class="link">   
+      <a class="buttons" href="about.html">See About</a>
+      <a class="buttons" href="services.html">See Services</a>
+    </li>      
+    <br><br><br><br>
+  </ul>
+</div>
+
+<div class="center-container">
+  <a class="buttons" href="/Scoob-Site/ScoobAdminPortal/onboarding/onboard-home.php">Sign up here!</a>
+</div>
+<br><br><br>
+
+
+
+<div class="foot">  
+  <br><br><br>
+      <a class="contact-button" href="contact.html">Contact Us</a>
+</div>
+
+</body>
+</html>
+
+
+<style>  
+  
+  .maininfo {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+
+  p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .logo {
+    background: #F07c34;
+    height: 550px;
+  }
+
+  body {
+    background: #093d65;
+  }
+  
+  .content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
+
+  .tick {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+  background: #F07c34;
+  height: 150px;
+  color: black;
+  }
+
+  .tick-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px; /* Adjust this padding to control the gap between image and h1 */
+  margin: 0 1px; /* Adjust this margin for spacing between tick-items */
+  }
+
+  .tick-item h1 {
+  margin: 0;
+  margin: 0 5px; /* Adjust this margin for spacing between tick-items */
+}
+
+.tick-item img {
+  margin-bottom: 10px; /* Adjust this margin for spacing between image and h1 */
+}
+
+  .links {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150%;
+}
+
+.desc p {
+  flex: 2;
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 143%;
+  margin-top: 10px;
+}
+
+.link a {
+  flex: 1;
+  text-align: center;
+}
+
+.buttons {
+  background-color: #F07c34;
+  border: none;
+  color: white;
+  padding: 10px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 220px;
+}
+
+.buttons:hover {
+  text-decoration: none;
+  color:black;
+}
+
+.contact-button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: gray;
+}
+
+.foot {
+  background-color: white;
+  height: 150px;
+}
+
+.contact-button:hover{
+  text-decoration: none;
+  color:black;
+}
+
+.center-container {
+  text-align: center;
+}
+</style>

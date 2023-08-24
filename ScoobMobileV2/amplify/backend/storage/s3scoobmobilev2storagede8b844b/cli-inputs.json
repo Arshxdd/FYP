@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3scoobmobilev2storagede8b844b",
+  "bucketName": "scoobmobilev2-storage-de8b844b",
+  "policyUUID": "00c8f66a",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
